@@ -1,0 +1,35 @@
+set_location b_ibuf_RNIMA6R[0] 1 6 0 # SB_LUT4 (LogicCell: b_ibuf_RNIMA6R[0]_LC_0)
+set_location b_ibuf_RNIOC6R[1] 1 6 3 # SB_LUT4 (LogicCell: b_ibuf_RNIOC6R[1]_LC_1)
+set_location b_ibuf_RNIQE6R[2] 1 6 6 # SB_LUT4 (LogicCell: b_ibuf_RNIQE6R[2]_LC_2)
+set_location result_RNO[0] 1 6 2 # SB_LUT4 (LogicCell: result_RNO[0]_LC_3)
+set_location result_RNO_0[0] 1 6 1 # SB_LUT4 (LogicCell: result_RNO_0[0]_LC_4)
+set_location result_RNO_0[1] 1 6 4 # SB_LUT4 (LogicCell: result_RNO_0[1]_LC_5)
+set_location result_RNO_0[2] 1 6 7 # SB_LUT4 (LogicCell: result_RNO_0[2]_LC_6)
+set_location result_RNO_0[3] 1 7 0 # SB_LUT4 (LogicCell: result_RNO_0[3]_LC_7)
+set_location result_RNO[1] 1 5 5 # SB_LUT4 (LogicCell: result_RNO[1]_LC_8)
+set_location result_RNO_1[0] 1 5 1 # SB_LUT4 (LogicCell: result_RNO_1[0]_LC_9)
+set_location un1_a_cry_0_c 1 5 1 # SB_CARRY (LogicCell: result_RNO_1[0]_LC_9)
+set_location result_RNO_1[1] 1 5 2 # SB_LUT4 (LogicCell: result_RNO_1[1]_LC_10)
+set_location un1_a_cry_1_c 1 5 2 # SB_CARRY (LogicCell: result_RNO_1[1]_LC_10)
+set_location result_RNO_1[2] 1 5 3 # SB_LUT4 (LogicCell: result_RNO_1[2]_LC_11)
+set_location un1_a_cry_2_c 1 5 3 # SB_CARRY (LogicCell: result_RNO_1[2]_LC_11)
+set_location result_RNO_1[3] 1 7 1 # SB_LUT4 (LogicCell: result_RNO_1[3]_LC_12)
+set_location result_RNO[2] 1 5 6 # SB_LUT4 (LogicCell: result_RNO[2]_LC_13)
+set_location result_RNO[3] 1 5 4 # SB_LUT4 (LogicCell: result_RNO[3]_LC_14)
+set_location un1_a_cry_0_c_THRU_CRY_0 1 5 0 # SB_CARRY (LogicCell: un1_a_cry_0_c_THRU_CRY_0_LC_15)
+set_location GND -1 -1 -1 # GND
+set_io a_ibuf[0] 0 3 1 # ICE_IO
+set_io a_ibuf[1] 0 4 0 # ICE_IO
+set_io a_ibuf[2] 0 2 0 # ICE_IO
+set_io a_ibuf[3] 0 9 1 # ICE_IO
+set_io b_ibuf[0] 0 8 1 # ICE_IO
+set_io b_ibuf[1] 0 8 0 # ICE_IO
+set_io b_ibuf[2] 0 6 1 # ICE_IO
+set_io b_ibuf[3] 0 10 0 # ICE_IO
+set_io clk_ibuf_gb_io 0 9 0 # ICE_GB_IO
+set_io func_ibuf[0] 0 2 1 # ICE_IO
+set_io func_ibuf[1] 0 3 0 # ICE_IO
+set_io result_obuf[0] 0 6 0 # ICE_IO
+set_io result_obuf[1] 0 5 1 # ICE_IO
+set_io result_obuf[2] 0 5 0 # ICE_IO
+set_io result_obuf[3] 0 4 1 # ICE_IO

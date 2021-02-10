@@ -1,0 +1,5 @@
+
+#1001 : define_clock -name top|clk clk -period 10000000.000 -clockgroup Autoconstr_clkgroup_0 -rise 0.000 -fall 5000000.000 -route 0.000
+# line 3 in c:/users/itxs/fpga/quadgen/quadgen_implmnt/autoconstraint_top.sdc
+
+define_clock -name {top|clk} [get_ports {clk}] -period {10000000.000} -clockgroup {Autoconstr_clkgroup_0} -rise {0.000} -fall {5000000.000} -route {0.000}

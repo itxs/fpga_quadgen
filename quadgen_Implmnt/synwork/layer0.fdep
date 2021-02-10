@@ -1,0 +1,17 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\iTXS\\FPGA\\quadgen\\quadgen_Implmnt\\synwork\\quadgen_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-nostructver|-I|C:\\Users\\iTXS\\FPGA\\quadgen\\|-I|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib|-sysv|-devicelib|C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-fsysv"
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\bin64\\c_ver.exe":1612971802
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\generic\\sb_ice40.v":1612971804
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\hypermods.v":1612971805
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\umr_capim.v":1612971805
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_objects.v":1612971805
+#CUR:"C:\\lscc\\iCEcube2.2020.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1612971805
+#CUR:"C:\\Users\\iTXS\\FPGA\\quadgen\\top.sv":1612973117
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\Users\iTXS\FPGA\quadgen\top.sv" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work top 0

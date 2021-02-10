@@ -1,0 +1,61 @@
+Synthesis options:
+The -a option is SBTiCE40.
+The -t option is TQ144.
+The -d option is iCE40HX1K.
+                                                          
+
+##########################################################
+
+### Lattice Family : SBTiCE40
+
+### Device  : iCE40HX1K
+
+### Package : TQ144
+
+### Number of Logic Cells: 1280
+
+### Number of RAM4k Blocks: 16
+
+### Number of DSP Blocks: 0
+
+### Number of PLLs: 1
+
+### Number of IO Pins: 95
+
+##########################################################
+
+                                                          
+
+Optimization goal = Area
+The -top option is not used.
+Target frequency = 1.000000 MHz.
+Maximum fanout = 10000.
+Timing path count = 3
+RWCheckOnRam = 0
+
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = auto (Default)
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+Output EDIF file name = quadgen_Implmnt/quadgen.edf.
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/iTXS/FPGA/quadgen (searchpath added)
+Verilog design file = top.sv
+ERROR - synthesis: Invalid file argument: top.sv
