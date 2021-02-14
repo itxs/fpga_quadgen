@@ -1,4 +1,4 @@
-module top (input clk, input [1:0] func, input [3:0] a, b, output reg [3:0] result);
+module Quadgen (input clk, input [1:0] func, input [3:0] a, b, output reg [3:0] result);
 
 always_ff @(posedge clk)
 	case(func)

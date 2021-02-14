@@ -32,7 +32,7 @@ Top module is: top
 
 
 
-EDF Parser run-time: 5 (sec)
+EDF Parser run-time: 1 (sec)
 
 
 
@@ -276,6 +276,8 @@ Device Utilization Summary
 
 
 
+oaInterface::SaveAsDesign Unable to lock database file for BFPGA_DESIGN_pl/top/INTERFACE
+
 I2054: Placement of design completed successfully
 
 
@@ -304,9 +306,9 @@ Begin Packing...
 
 initializing finish
 
-Total HPWL cost is 51
+Total HPWL cost is 149
 
-used logic cells: 16
+used logic cells: 31
 
 Translating sdc file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/outputs/placer/top_pl.sdc...
 
@@ -342,7 +344,7 @@ Build Date:     Dec  9 2020 17:44:15
 
 I1203: Reading Design top
 
-Read design time: 0
+Read design time: 1
 
 I1202: Reading Architecture of device iCE40HX1K
 
@@ -350,11 +352,13 @@ Read device time: 1
 
 I1209: Started routing
 
-I1223: Total Nets : 30 
+I1223: Total Nets : 46 
 
-I1212: Iteration  1 :    15 unrouted : 0 seconds
+I1212: Iteration  1 :    22 unrouted : 0 seconds
 
-I1212: Iteration  2 :     0 unrouted : 0 seconds
+I1212: Iteration  2 :     4 unrouted : 0 seconds
+
+I1212: Iteration  3 :     0 unrouted : 0 seconds
 
 I1215: Routing is successful
 
@@ -370,7 +374,7 @@ I1210: Writing routes
 
 I1218: Exiting the router
 
-I1224: Router run-time : 1 seconds
+I1224: Router run-time : 2 seconds
 
 
 
@@ -422,7 +426,7 @@ Netlister succeeded.
 
 
 
-Netlister run-time: 0 (sec)
+Netlister run-time: 1 (sec)
 
 
 
@@ -442,7 +446,7 @@ Build Date:     Dec  9 2020 17:41:47
 
 
 
-Timer run-time: 1 seconds
+Timer run-time: 0 seconds
 
 
 

@@ -32,7 +32,7 @@ Top module is: top
 
 
 
-EDF Parser run-time: 0 (sec)
+EDF Parser run-time: 1 (sec)
 
 
 
@@ -276,6 +276,8 @@ Device Utilization Summary
 
 
 
+oaInterface::SaveAsDesign Unable to lock database file for BFPGA_DESIGN_pl/top/INTERFACE
+
 I2054: Placement of design completed successfully
 
 
@@ -304,7 +306,7 @@ Begin Packing...
 
 initializing finish
 
-Total HPWL cost is 51
+Total HPWL cost is 110
 
 used logic cells: 16
 
@@ -342,7 +344,7 @@ Build Date:     Dec  9 2020 17:44:15
 
 I1203: Reading Design top
 
-Read design time: 0
+Read design time: 1
 
 I1202: Reading Architecture of device iCE40HX1K
 
@@ -352,13 +354,13 @@ I1209: Started routing
 
 I1223: Total Nets : 30 
 
-I1212: Iteration  1 :    15 unrouted : 0 seconds
+I1212: Iteration  1 :    11 unrouted : 0 seconds
 
 I1212: Iteration  2 :     0 unrouted : 0 seconds
 
 I1215: Routing is successful
 
-Routing time: 1
+Routing time: 0
 
 I1206: Completed routing
 
@@ -422,7 +424,7 @@ Netlister succeeded.
 
 
 
-Netlister run-time: 0 (sec)
+Netlister run-time: 1 (sec)
 
 
 
@@ -442,7 +444,7 @@ Build Date:     Dec  9 2020 17:41:47
 
 
 
-Timer run-time: 1 seconds
+Timer run-time: 0 seconds
 
 
 

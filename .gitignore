@@ -6,3 +6,5 @@
 /quadgen_Implmnt/syntmp
 /quadgen_Implmnt/synlog
 /quadgen_Implmnt/*.htm
+/work
+/*.vcd

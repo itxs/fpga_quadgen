@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\iTXS\FPGA\quadgen\quadgen_syn.prj
-#--  Written on Wed Feb 10 19:13:12 2021
+#--  Written on Wed Feb 10 21:36:26 2021
 
 
 #project files
@@ -9,7 +9,6 @@
 
 
 add_file -verilog -lib work "top.sv" 
-add_file -constraint -lib work "quadgen_Implmnt/AutoConstraint_top.sdc"
 #implementation: "quadgen_Implmnt"
 impl -add quadgen_Implmnt -type fpga
 
@@ -36,7 +35,7 @@ set_option -part_companion ""
 set_option -distributed_compile 0
 
 # mapper_without_write_options
-set_option -frequency 50.000000
+set_option -frequency 12.000000
 set_option -srs_instrumentation 1
 
 # mapper_options

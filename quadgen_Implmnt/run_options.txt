@@ -1,12 +1,11 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09L+ice40
 #--  Project file C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\run_options.txt
-#--  Written on Wed Feb 10 19:14:13 2021
+#--  Written on Wed Feb 10 21:54:33 2021
 
 
 #project files
 add_file -verilog -vlog_std sysv "top.sv"
-add_file -constraint "quadgen_Implmnt/AutoConstraint_top.sdc"
 
 
 
@@ -36,7 +35,7 @@ set_option -part_companion ""
 set_option -distributed_compile 0
 
 # mapper_without_write_options
-set_option -frequency 50.000000
+set_option -frequency 12.000000
 set_option -srs_instrumentation 1
 
 # mapper_options

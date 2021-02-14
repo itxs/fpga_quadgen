@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DESKTOP-2R9SNGM
 
-# Wed Feb 10 19:14:13 2021
+# Wed Feb 10 21:54:33 2021
 
 #Implementation: quadgen_Implmnt
 
@@ -35,7 +35,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb 10 19:14:13 2021
+# Wed Feb 10 21:54:34 2021
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -48,7 +48,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb 10 19:14:13 2021
+# Wed Feb 10 21:54:34 2021
 
 ###########################################################]
 @END
@@ -58,7 +58,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb 10 19:14:13 2021
+# Wed Feb 10 21:54:34 2021
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
@@ -72,12 +72,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Feb 10 19:14:14 2021
+# Wed Feb 10 21:54:35 2021
 
 ###########################################################]
-Pre-mapping Report
-
-# Wed Feb 10 19:14:15 2021
+# Wed Feb 10 21:54:35 2021
 
 Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -85,8 +83,7 @@ Product Version L-2016.09L+ice40
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
 
-Reading constraint file: C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\AutoConstraint_top.sdc
-@W: MT453 |clock period is too long for clock top|clk, changing period from 10000000.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 10000.0 ns. 
+@A: MF827 |No constraint file specified.
 @L: C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\quadgen_scck.rpt 
 Printing clock  summary report in "C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\quadgen_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
@@ -115,11 +112,13 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Clock Summary
 *****************
 
-Start       Requested     Requested     Clock        Clock                     Clock
-Clock       Frequency     Period        Type         Group                     Load 
-------------------------------------------------------------------------------------
-top|clk     0.1 MHz       20000.000     declared     Autoconstr_clkgroup_0     4    
-====================================================================================
+Start       Requested     Requested     Clock        Clock                   Clock
+Clock       Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------
+top|clk     12.0 MHz      83.333        inferred     Inferred_clkgroup_0     4    
+==================================================================================
+
+@W: MT529 :"c:\users\itxs\fpga\quadgen\top.sv":3:0:3:8|Found inferred clock top|clk which controls 4 sequential elements including result[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\quadgen.sap.
@@ -136,12 +135,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 133MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 10 19:14:15 2021
+# Wed Feb 10 21:54:35 2021
 
 ###########################################################]
-Map & Optimize Report
-
-# Wed Feb 10 19:14:15 2021
+# Wed Feb 10 21:54:35 2021
 
 Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -163,7 +160,6 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
 
-@W: MT453 |clock period is too long for clock top|clk, changing period from 10000000.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 10000.0 ns. 
 
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
@@ -250,20 +246,19 @@ Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s
 
 Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 133MB)
 
-@N: MT615 |Found clock top|clk with period 20000.00ns 
+@W: MT420 |Found inferred clock top|clk with period 83.33ns. Please declare a user-defined clock on object "p:clk"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Feb 10 19:14:16 2021
+# Timing Report written on Wed Feb 10 21:54:36 2021
 #
 
 
 Top view:               top
-Requested Frequency:    0.1 MHz
+Requested Frequency:    12.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\AutoConstraint_top.sdc
-                       
+Constraint File(s):    
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
@@ -276,11 +271,11 @@ Performance Summary
 
 Worst slack in design: NA
 
-                   Requested     Estimated     Requested     Estimated               Clock        Clock                
-Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group                
------------------------------------------------------------------------------------------------------------------------
-top|clk            0.1 MHz       NA            20000.000     NA            NA        declared     Autoconstr_clkgroup_0
-=======================================================================================================================
+                   Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
+---------------------------------------------------------------------------------------------------------------------
+top|clk            12.0 MHz      NA            83.333        NA            NA        inferred     Inferred_clkgroup_0
+=====================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
@@ -343,9 +338,9 @@ Distribution of All Consumed Luts 15 = 15
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 133MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 133MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 10 19:14:16 2021
+# Wed Feb 10 21:54:36 2021
 
 ###########################################################]

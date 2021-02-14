@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:55:50
 
-* File Generated:     Feb 10 2021 19:14:23
+* File Generated:     Feb 10 2021 21:54:37
 
 * Purpose:            
 
@@ -14,21 +14,21 @@
 
 * ******************************************************************************
 
-Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\netlist\oadb-top --outdir C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev --package TQ144 --deviceMarketName iCE40HX1K --sdc-file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40HX1K.lib --effort_level std --out-sdc-file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\outputs\placer\top_pl.sdc
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/netlist/oadb-top --outdir C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/outputs/placer --device-file C:/lscc/iCEcube2.2020.12/sbt_backend/devices\ICE40P01.dev --package TQ144 --lib-file C:/lscc/iCEcube2.2020.12/sbt_backend/devices/ice40HX1K.lib --sdc-file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/Temp/sbt_temp.sdc --out-sdc-file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/outputs/placer/top_pl.sdc --deviceMarketName iCE40HX1K
 I2004: Option and Settings Summary
 =============================================================
-Device file          - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev
+Device file          - C:/lscc/iCEcube2.2020.12/sbt_backend/devices\ICE40P01.dev
 Package              - TQ144
-Design database      - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\netlist\oadb-top
-SDC file             - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\Temp/sbt_temp.sdc
-Output directory     - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\outputs\placer
-Timing library       - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40HX1K.lib
+Design database      - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/netlist/oadb-top
+SDC file             - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/Temp/sbt_temp.sdc
+Output directory     - C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/outputs/placer
+Timing library       - C:/lscc/iCEcube2.2020.12/sbt_backend/devices/ice40HX1K.lib
 Effort level         - std
 
 I2050: Starting reading inputs for placer
 =============================================================
-I2100: Reading design library: C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\netlist\oadb-top/BFPGA_DESIGN_ep
-I2065: Reading device file : C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev
+I2100: Reading design library: C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/netlist/oadb-top/BFPGA_DESIGN_ep
+I2065: Reading device file : C:/lscc/iCEcube2.2020.12/sbt_backend/devices\ICE40P01.dev
 I2051: Reading of inputs for placer completed successfully
 
 I2053: Starting placement of the design

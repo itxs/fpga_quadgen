@@ -6,7 +6,7 @@
 
 * Build Date:         Dec  9 2020 17:45:10
 
-* File Generated:     Feb 10 2021 19:15:25
+* File Generated:     Feb 10 2021 21:54:37
 
 * Purpose:            Router runtime info
 
@@ -14,12 +14,12 @@
 
 * ******************************************************************************
 
-Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P01.dev C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\pr_1\sbt\netlist\oadb-top C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40HX1K.lib C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\pr_1\sbt\outputs\packer\top_pk.sdc --outdir C:\Users\iTXS\FPGA\quadgen\quadgen_Implmnt\pr_1\sbt\outputs\router --sdf_file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt\pr_1\sbt\outputs\simulation_netlist\top_sbt.sdf --pin_permutation 
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbrouter.exe C:/lscc/iCEcube2.2020.12/sbt_backend/devices\ICE40P01.dev C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/netlist/oadb-top C:/lscc/iCEcube2.2020.12/sbt_backend/devices/ice40HX1K.lib C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//top_pk.sdc --outdir C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//sbt/outputs/router --sdf_file C:/Users/iTXS/FPGA/quadgen/quadgen_Implmnt/pr_1//top_sbt.sdf --pin_permutation 
 I1203: Reading Design top
 I1202: Reading Architecture of device iCE40HX1K
 I1209: Started routing
 I1223: Total Nets : 30 
-I1212: Iteration  1 :    16 unrouted : 0 seconds
+I1212: Iteration  1 :    11 unrouted : 0 seconds
 I1212: Iteration  2 :     0 unrouted : 0 seconds
 I1215: Routing is successful
 I1206: Completed routing
