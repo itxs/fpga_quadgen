@@ -1,35 +1,42 @@
 module testbench;
 	logic clock;
-	wire [1:0] cmd;
-	wire [3:0] first, second, out;
-	reg [7:0] vals;
-	reg [1:0] command;
-	Quadgen DUT(.clk(clock), .func(cmd), .a(first), .b(second), .result(out));
-
-	assign first = vals[3:0];
-	assign second = vals[7:4];
-	assign cmd = command;
-	always #10 clock <= !clock;
+	logic nrst;
+	logic [23:0] out;
+	logic a;
+	logic b;
+	Quadgen DUT(.clk(clock), .quadA(a), .quadB(b), .nrst(nrst), .count(out[21:0]));
+	
+	always #5 clock <= !clock;
 
 	initial begin
+		out = 0;
 		clock = 0;
-		vals = 0;
+		nrst = 1;
+		a = 0;
+		b = 0;
+		#10;
+		nrst = 0;
 		#20;
-		vals[3:0] = 4'b0110;
-		vals[7:4] = 4'b0011;
-		command = 2'b00;
-		#20;
-		vals[3:0] = 4'b0110;
-		vals[7:4] = 4'b0011;
-		command = 2'b01;
-		#20;
-		vals[3:0] = 4'b0110;
-		vals[7:4] = 4'b0011;
-		command = 2'b10;
-		#20;
-		vals[3:0] = 4'b0110;
-		vals[7:4] = 4'b0011;
-		command = 2'b11;
-		#200 $stop;
+		for (int i = 0; i < 10 ; i++) begin
+			a = 1;
+			#20;
+			b = 1;
+			#20;
+			a = 0;
+			#20;
+			b = 0;
+			#20;
+		end
+		for (int i = 0; i < 10 ; i++) begin
+			b = 1;
+			#20;
+			a = 1;
+			#20;
+			b = 0;
+			#20;
+			a = 0;
+			#20;
+		end
+		#500 $stop;
 	end
 endmodule
